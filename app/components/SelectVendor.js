@@ -30,7 +30,7 @@ export default class SelectVendor extends React.Component {
     let result;
     if (this.state.vendorsList.length) {
       result = this.state.vendorsList.map((vendor, index) => {
-        return <Link to={"/" + vendor.make_id} className="list-group-item" key={index}>{vendor.make_display}</Link>;
+        return <Link to={"/model/" + vendor.make_id} className="list-group-item" key={index}>{vendor.make_display}</Link>;
       });
     }
     return <div className="list-group" >{result}</div>;

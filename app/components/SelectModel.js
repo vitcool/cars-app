@@ -31,7 +31,7 @@ export default class SelectModel extends React.Component {
       result = this.state.modelsList.map((model, index) => {
         return (
           <Link
-            to={"/" + model.model_name}
+            to={"/car/" + this.props.match.params.model_id  + "/" + model.model_name}
             className="list-group-item"
             key={index}
           >
