@@ -18,7 +18,7 @@ ReactDOM.render(
         </div>
       </div>
       <Route exact path="/" component={App} />
-      <Route path="/model" component={SelectModel} />
+      <Route path="/:model_id" component={SelectModel} />
       <Route path="/vendor" component={SelectVendor} />
       <Route path="/about" component={About} />
     </div>
