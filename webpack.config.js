@@ -17,5 +17,10 @@ module.exports={
         filename: 'transformed.js',
         path: __dirname + '/build'
     },
+    devServer: {
+        historyApiFallback: true,
+        contentBase: './',
+        hot: true
+      },
     plugins: [HTMLWebpackPluginConfig]
 };

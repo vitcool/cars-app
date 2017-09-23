@@ -45,7 +45,6 @@ export default class SelectModel extends React.Component {
   render() {
     return (
       <div>
-        <div>{this.props.match.params.model_id}</div>
         <div>
           {this.makeDDL()}
         </div>

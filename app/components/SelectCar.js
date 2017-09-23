@@ -44,7 +44,6 @@ export default class SelectCar extends React.Component {
   render() {
     return (
       <div>
-        <div>{this.props.match.params.model_id} {this.props.match.params.model_name} </div>
         <div>
           {this.makeDDL()}
         </div>

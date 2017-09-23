@@ -25,7 +25,6 @@ export default class SelectCar extends React.Component {
     });
   }
   getData() {
-    console.log(this.state.carDetails[0]);
     if (this.state.carDetails[0]) {
       return (
         <div>
